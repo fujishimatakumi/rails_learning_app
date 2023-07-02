@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  negative_prompt: one
+  category: one
+
+two:
+  negative_prompt: two
+  category: two
