@@ -1,0 +1,2 @@
+class NegativePrompt < ApplicationRecord
+end

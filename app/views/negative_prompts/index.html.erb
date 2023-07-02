@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Negative Prompts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>General setting</th>
+      <th>Text</th>
+      <th>Translation text</th>
+      <th>Prompt category</th>
+      <th>Prompt tag</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @negative_prompts.each do |negative_prompt| %>
+      <tr>
+        <td><%= negative_prompt.general_setting_id %></td>
+        <td><%= negative_prompt.text %></td>
+        <td><%= negative_prompt.translation_text %></td>
+        <td><%= negative_prompt.prompt_category_id %></td>
+        <td><%= negative_prompt.prompt_tag_id %></td>
+        <td><%= link_to 'Show', negative_prompt %></td>
+        <td><%= link_to 'Edit', edit_negative_prompt_path(negative_prompt) %></td>
+        <td><%= link_to 'Destroy', negative_prompt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Negative Prompt', new_negative_prompt_path %>

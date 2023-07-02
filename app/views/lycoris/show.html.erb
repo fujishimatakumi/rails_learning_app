@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>General setting:</strong>
+  <%= @lycori.general_setting_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lycori.name %>
+</p>
+
+<p>
+  <strong>Discription:</strong>
+  <%= @lycori.discription %>
+</p>
+
+<p>
+  <strong>Download url:</strong>
+  <%= @lycori.download_url %>
+</p>
+
+<p>
+  <strong>Extention category:</strong>
+  <%= @lycori.extention_category_id %>
+</p>
+
+<p>
+  <strong>Extention tag:</strong>
+  <%= @lycori.extention_tag_id %>
+</p>
+
+<%= link_to 'Edit', edit_lycori_path(@lycori) %> |
+<%= link_to 'Back', lycoris_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @prompt_tag.label %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @prompt_tag.color %>
+</p>
+
+<%= link_to 'Edit', edit_prompt_tag_path(@prompt_tag) %> |
+<%= link_to 'Back', prompt_tags_path %>

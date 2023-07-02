@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>General setting:</strong>
+  <%= @lora.general_setting_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lora.name %>
+</p>
+
+<p>
+  <strong>Discription:</strong>
+  <%= @lora.discription %>
+</p>
+
+<p>
+  <strong>Download url:</strong>
+  <%= @lora.download_url %>
+</p>
+
+<p>
+  <strong>Extention category:</strong>
+  <%= @lora.extention_category_id %>
+</p>
+
+<p>
+  <strong>Extention tag:</strong>
+  <%= @lora.extention_tag_id %>
+</p>
+
+<%= link_to 'Edit', edit_lora_path(@lora) %> |
+<%= link_to 'Back', loras_path %>

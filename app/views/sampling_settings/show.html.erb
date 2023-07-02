@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>General setting:</strong>
+  <%= @sampling_setting.general_setting_id %>
+</p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @sampling_setting.method_id %>
+</p>
+
+<p>
+  <strong>Step:</strong>
+  <%= @sampling_setting.step %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @sampling_setting.height %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @sampling_setting.width %>
+</p>
+
+<p>
+  <strong>Batch count:</strong>
+  <%= @sampling_setting.batch_count %>
+</p>
+
+<p>
+  <strong>Batch size:</strong>
+  <%= @sampling_setting.batch_size %>
+</p>
+
+<p>
+  <strong>Cfg scale:</strong>
+  <%= @sampling_setting.cfg_scale %>
+</p>
+
+<p>
+  <strong>Seed:</strong>
+  <%= @sampling_setting.seed %>
+</p>
+
+<p>
+  <strong>Script:</strong>
+  <%= @sampling_setting.script_id %>
+</p>
+
+<p>
+  <strong>Face recover flg:</strong>
+  <%= @sampling_setting.face_recover_flg %>
+</p>
+
+<p>
+  <strong>Generate tiling flg:</strong>
+  <%= @sampling_setting.generate_tiling_flg %>
+</p>
+
+<p>
+  <strong>High quality setting:</strong>
+  <%= @sampling_setting.high_quality_setting_id %>
+</p>
+
+<%= link_to 'Edit', edit_sampling_setting_path(@sampling_setting) %> |
+<%= link_to 'Back', sampling_settings_path %>

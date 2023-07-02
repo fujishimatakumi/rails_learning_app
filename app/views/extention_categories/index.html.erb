@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Extention Categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @extention_categories.each do |extention_category| %>
+      <tr>
+        <td><%= extention_category.label %></td>
+        <td><%= extention_category.color %></td>
+        <td><%= link_to 'Show', extention_category %></td>
+        <td><%= link_to 'Edit', edit_extention_category_path(extention_category) %></td>
+        <td><%= link_to 'Destroy', extention_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Extention Category', new_extention_category_path %>

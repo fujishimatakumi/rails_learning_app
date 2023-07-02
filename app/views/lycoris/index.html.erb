@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lycoris</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>General setting</th>
+      <th>Name</th>
+      <th>Discription</th>
+      <th>Download url</th>
+      <th>Extention category</th>
+      <th>Extention tag</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lycoris.each do |lycori| %>
+      <tr>
+        <td><%= lycori.general_setting_id %></td>
+        <td><%= lycori.name %></td>
+        <td><%= lycori.discription %></td>
+        <td><%= lycori.download_url %></td>
+        <td><%= lycori.extention_category_id %></td>
+        <td><%= lycori.extention_tag_id %></td>
+        <td><%= link_to 'Show', lycori %></td>
+        <td><%= link_to 'Edit', edit_lycori_path(lycori) %></td>
+        <td><%= link_to 'Destroy', lycori, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lycori', new_lycori_path %>

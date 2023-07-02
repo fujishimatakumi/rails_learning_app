@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @prompt_category.label %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @prompt_category.color %>
+</p>
+
+<%= link_to 'Edit', edit_prompt_category_path(@prompt_category) %> |
+<%= link_to 'Back', prompt_categories_path %>

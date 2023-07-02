@@ -1,0 +1,82 @@
+<%= form_with(model: sampling_setting, local: true) do |form| %>
+  <% if sampling_setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sampling_setting.errors.count, "error") %> prohibited this sampling_setting from being saved:</h2>
+
+      <ul>
+        <% sampling_setting.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :general_setting_id %>
+    <%= form.text_field :general_setting_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :method_id %>
+    <%= form.text_field :method_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :step %>
+    <%= form.text_field :step %>
+  </div>
+
+  <div class="field">
+    <%= form.label :height %>
+    <%= form.number_field :height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :width %>
+    <%= form.number_field :width %>
+  </div>
+
+  <div class="field">
+    <%= form.label :batch_count %>
+    <%= form.number_field :batch_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :batch_size %>
+    <%= form.number_field :batch_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cfg_scale %>
+    <%= form.text_area :cfg_scale %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seed %>
+    <%= form.text_field :seed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :script_id %>
+    <%= form.text_field :script_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :face_recover_flg %>
+    <%= form.check_box :face_recover_flg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :generate_tiling_flg %>
+    <%= form.check_box :generate_tiling_flg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :high_quality_setting_id %>
+    <%= form.text_field :high_quality_setting_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

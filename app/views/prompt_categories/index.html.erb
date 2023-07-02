@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prompt Categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prompt_categories.each do |prompt_category| %>
+      <tr>
+        <td><%= prompt_category.label %></td>
+        <td><%= prompt_category.color %></td>
+        <td><%= link_to 'Show', prompt_category %></td>
+        <td><%= link_to 'Edit', edit_prompt_category_path(prompt_category) %></td>
+        <td><%= link_to 'Destroy', prompt_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prompt Category', new_prompt_category_path %>

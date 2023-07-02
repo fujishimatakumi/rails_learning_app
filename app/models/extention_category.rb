@@ -1,0 +1,2 @@
+class ExtentionCategory < ApplicationRecord
+end

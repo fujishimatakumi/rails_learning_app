@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prompt Tags</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prompt_tags.each do |prompt_tag| %>
+      <tr>
+        <td><%= prompt_tag.label %></td>
+        <td><%= prompt_tag.color %></td>
+        <td><%= link_to 'Show', prompt_tag %></td>
+        <td><%= link_to 'Edit', edit_prompt_tag_path(prompt_tag) %></td>
+        <td><%= link_to 'Destroy', prompt_tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prompt Tag', new_prompt_tag_path %>

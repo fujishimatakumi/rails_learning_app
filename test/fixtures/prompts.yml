@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  general_setting_id: 
+  text: MyText
+  translation_text: MyText
+  prompt_category_id: 
+  prompt_tag_id: 
+
+two:
+  general_setting_id: 
+  text: MyText
+  translation_text: MyText
+  prompt_category_id: 
+  prompt_tag_id: 

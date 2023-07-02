@@ -1,0 +1,2 @@
+class PromptCategory < ApplicationRecord
+end

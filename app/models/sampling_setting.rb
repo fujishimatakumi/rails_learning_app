@@ -1,0 +1,2 @@
+class SamplingSetting < ApplicationRecord
+end

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prompt:</strong>
+  <%= @general_setting.prompt_id %>
+</p>
+
+<p>
+  <strong>Negative prompt:</strong>
+  <%= @general_setting.negative_prompt_id %>
+</p>
+
+<p>
+  <strong>Sampling setting:</strong>
+  <%= @general_setting.sampling_setting_id %>
+</p>
+
+<p>
+  <strong>Checkpoint:</strong>
+  <%= @general_setting.checkpoint_id %>
+</p>
+
+<p>
+  <strong>Lora:</strong>
+  <%= @general_setting.lora_id %>
+</p>
+
+<p>
+  <strong>Lycoris:</strong>
+  <%= @general_setting.lycoris_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @general_setting.category_id %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @general_setting.tag_id %>
+</p>
+
+<p>
+  <strong>Discription:</strong>
+  <%= @general_setting.discription %>
+</p>
+
+<%= link_to 'Edit', edit_general_setting_path(@general_setting) %> |
+<%= link_to 'Back', general_settings_path %>

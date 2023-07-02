@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>General Settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prompt</th>
+      <th>Negative prompt</th>
+      <th>Sampling setting</th>
+      <th>Checkpoint</th>
+      <th>Lora</th>
+      <th>Lycoris</th>
+      <th>Category</th>
+      <th>Tag</th>
+      <th>Discription</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @general_settings.each do |general_setting| %>
+      <tr>
+        <td><%= general_setting.prompt_id %></td>
+        <td><%= general_setting.negative_prompt_id %></td>
+        <td><%= general_setting.sampling_setting_id %></td>
+        <td><%= general_setting.checkpoint_id %></td>
+        <td><%= general_setting.lora_id %></td>
+        <td><%= general_setting.lycoris_id %></td>
+        <td><%= general_setting.category_id %></td>
+        <td><%= general_setting.tag_id %></td>
+        <td><%= general_setting.discription %></td>
+        <td><%= link_to 'Show', general_setting %></td>
+        <td><%= link_to 'Edit', edit_general_setting_path(general_setting) %></td>
+        <td><%= link_to 'Destroy', general_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New General Setting', new_general_setting_path %>

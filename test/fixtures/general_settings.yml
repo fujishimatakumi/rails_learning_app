@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prompt_id: 
+  negative_prompt_id: 
+  sampling_setting_id: 
+  checkpoint_id: 
+  lora_id: 
+  lycoris_id: 
+  category_id: 
+  tag_id: 
+  discription: MyText
+
+two:
+  prompt_id: 
+  negative_prompt_id: 
+  sampling_setting_id: 
+  checkpoint_id: 
+  lora_id: 
+  lycoris_id: 
+  category_id: 
+  tag_id: 
+  discription: MyText

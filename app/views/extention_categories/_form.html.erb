@@ -1,0 +1,27 @@
+<%= form_with(model: extention_category, local: true) do |form| %>
+  <% if extention_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(extention_category.errors.count, "error") %> prohibited this extention_category from being saved:</h2>
+
+      <ul>
+        <% extention_category.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :label %>
+    <%= form.text_area :label %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_area :color %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

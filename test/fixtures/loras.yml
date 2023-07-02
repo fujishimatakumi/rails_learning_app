@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  general_setting_id: 
+  name: MyText
+  discription: MyText
+  download_url: MyText
+  extention_category_id: 
+  extention_tag_id: 
+
+two:
+  general_setting_id: 
+  name: MyText
+  discription: MyText
+  download_url: MyText
+  extention_category_id: 
+  extention_tag_id: 

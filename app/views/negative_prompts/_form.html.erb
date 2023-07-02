@@ -1,0 +1,42 @@
+<%= form_with(model: negative_prompt, local: true) do |form| %>
+  <% if negative_prompt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(negative_prompt.errors.count, "error") %> prohibited this negative_prompt from being saved:</h2>
+
+      <ul>
+        <% negative_prompt.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :general_setting_id %>
+    <%= form.text_field :general_setting_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :text %>
+    <%= form.text_area :text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :translation_text %>
+    <%= form.text_area :translation_text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prompt_category_id %>
+    <%= form.text_field :prompt_category_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prompt_tag_id %>
+    <%= form.text_field :prompt_tag_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

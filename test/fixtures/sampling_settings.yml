@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  general_setting_id: 
+  method_id: 
+  step: 
+  height: 1
+  width: 1
+  batch_count: 1
+  batch_size: 1
+  cfg_scale: MyText
+  seed: 
+  script_id: 
+  face_recover_flg: false
+  generate_tiling_flg: false
+  high_quality_setting_id: 
+
+two:
+  general_setting_id: 
+  method_id: 
+  step: 
+  height: 1
+  width: 1
+  batch_count: 1
+  batch_size: 1
+  cfg_scale: MyText
+  seed: 
+  script_id: 
+  face_recover_flg: false
+  generate_tiling_flg: false
+  high_quality_setting_id: 

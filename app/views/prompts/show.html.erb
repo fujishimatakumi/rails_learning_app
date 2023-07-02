@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>General setting:</strong>
+  <%= @prompt.general_setting_id %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @prompt.text %>
+</p>
+
+<p>
+  <strong>Translation text:</strong>
+  <%= @prompt.translation_text %>
+</p>
+
+<p>
+  <strong>Prompt category:</strong>
+  <%= @prompt.prompt_category_id %>
+</p>
+
+<p>
+  <strong>Prompt tag:</strong>
+  <%= @prompt.prompt_tag_id %>
+</p>
+
+<%= link_to 'Edit', edit_prompt_path(@prompt) %> |
+<%= link_to 'Back', prompts_path %>

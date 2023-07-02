@@ -1,0 +1,2 @@
+class ExtentionTag < ApplicationRecord
+end

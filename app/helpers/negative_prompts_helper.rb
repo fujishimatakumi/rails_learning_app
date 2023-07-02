@@ -1,0 +1,2 @@
+module NegativePromptsHelper
+end

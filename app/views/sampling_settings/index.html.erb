@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sampling Settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>General setting</th>
+      <th>Method</th>
+      <th>Step</th>
+      <th>Height</th>
+      <th>Width</th>
+      <th>Batch count</th>
+      <th>Batch size</th>
+      <th>Cfg scale</th>
+      <th>Seed</th>
+      <th>Script</th>
+      <th>Face recover flg</th>
+      <th>Generate tiling flg</th>
+      <th>High quality setting</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sampling_settings.each do |sampling_setting| %>
+      <tr>
+        <td><%= sampling_setting.general_setting_id %></td>
+        <td><%= sampling_setting.method_id %></td>
+        <td><%= sampling_setting.step %></td>
+        <td><%= sampling_setting.height %></td>
+        <td><%= sampling_setting.width %></td>
+        <td><%= sampling_setting.batch_count %></td>
+        <td><%= sampling_setting.batch_size %></td>
+        <td><%= sampling_setting.cfg_scale %></td>
+        <td><%= sampling_setting.seed %></td>
+        <td><%= sampling_setting.script_id %></td>
+        <td><%= sampling_setting.face_recover_flg %></td>
+        <td><%= sampling_setting.generate_tiling_flg %></td>
+        <td><%= sampling_setting.high_quality_setting_id %></td>
+        <td><%= link_to 'Show', sampling_setting %></td>
+        <td><%= link_to 'Edit', edit_sampling_setting_path(sampling_setting) %></td>
+        <td><%= link_to 'Destroy', sampling_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sampling Setting', new_sampling_setting_path %>

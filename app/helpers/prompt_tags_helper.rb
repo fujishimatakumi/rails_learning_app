@@ -1,0 +1,2 @@
+module PromptTagsHelper
+end
